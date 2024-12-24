@@ -1,1 +1,2 @@
-This is my new updated readme file
+Status of the project: 
+
