@@ -1,0 +1,52 @@
+# This file is in YAML format. You must ensure that the punctuation
+# and whitespace is preserved. Do NOT use Windows Notepad to edit this
+# file; use a real programming editor like Notepad++ instead.
+
+# Write your group name exactly as it appears on Canvas.
+group: Analysis of Patient Data
+
+# Write the names of your group members as a comma-separated list
+# within the square brackets.
+members: [Sai Kiran Veeravalli, Aryananda Saji, Abhijith Binu, Divya Nandhu Vankayalapati, Nanditha Dasi]
+
+# Write your general topic.
+topic: Analysis of Patient Data for Epidemiology Study
+
+# Write your research question, following one of the three allowed templates.
+# Be sure your question is all on one line.
+RQ: How do demographic factors like age and sex affect the progression and outcomes of patient health in an epidemiology study?
+
+# Write your independent and dependent variables. These should be the
+# column names (reported by R colnames()) where these variables are
+# found in your dataset's CSV file.
+independent-var: [age]
+dependent-var: [sex]
+
+# Write the null hypothesis for your research question, again ensuring it is all on one line.
+null-hypothesis: There are no significant associations between demographic factors like age and sex of patients.
+
+# Write the alternative hypothesis for your research question, again ensuring it is all on one line.
+alt-hypothesis: There are significant associations between demographic factors like age and sex of patients.
+
+# Write the dataset ID (KNNN):
+dataset-id: 
+
+# Write the dataset URL.
+dataset-url:
+
+# Write the dataset CSV filename, exactly as it appears on the Sharepoint list
+# (which should be the same as the one in your repository!)
+dataset-file: PatientInfo.csv
+
+# Paste the output of loading your dataset into R, and executing the
+# colnames() function, into the space below the `columns: |` line.
+# Put two spaces *before* every line you pasted.
+
+# Loading the dataset
+patientData <- read_csv("PatientInfo.csv", show_col_types = FALSE)
+
+# Printing data columns
+colnames(patientData)
+ [1] "patient_id"         "sex"                "age"                "country"            "province"          
+ [6] "city"               "infection_case"     "infected_by"        "contact_number"     "symptom_onset_date"
+[11] "confirmed_date"     "released_date"      "deceased_date"      "state"   
